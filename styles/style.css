@@ -7,22 +7,32 @@ src:url("/assets/get_schwifty.ttf");
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
+body{
+/* ackground:no-repeat bottom/100% url("/assets/rickandmorty-space-2.png"); */
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+/*     background-image: radial-gradient(circle at 31.7% 118.3%, #c5fcff 0, #5389f2 50%, #002550 100%);
+ */
 
+ background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%);
+ 
+}
 
   
 
 
 
 header{
-    
+    /* background:no-repeat top/100% url("/assets/rickandmorty-space-2.png"); */
     display: flex;
-    background:no-repeat center/100% url("/assets/rickandmorty-space-2.png");
-    align-items: stretch;
-    border-bottom: 5px solid royalblue;
-    flex-direction: column;
     
-}
+    align-items: stretch;
+    flex-direction: column;
+/*     background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%);
+ */}
 
 header nav{
     display: flex;
@@ -56,6 +66,7 @@ header nav ul li:hover {
 
 header nav ul a{
     text-decoration: none;
+    font-weight: 700;
 }
 
 .banner{
@@ -75,47 +86,41 @@ header nav ul a{
     width: 500px;
     opacity: 80%;
 }
-.title-banner{
-    position:relative;
+.title-banner h1{
+    animation: title 0.5s infinite alternate steps(3);
     
 }
-.title-banner span{
-    position: absolute;
-    right: 0;
-    width: 0;
-    border-left:1px solid #000;
-   /*  background-color: #004cff; */
-   background:gray;
-    animation:maquina 3s infinite alternate steps(16);
-}
 
-@keyframes maquina {
+
+@keyframes title {
     from{
-        width: 100%;
+        opacity: 20%;
     }
     to{
-        width: 0;
+        width: 100%;
     }
 }
 
 .title-banner h1{
     font-size: 90px;
     font-family: "rickandmorty";
-    color:chartreuse
-
+    color:chartreuse;
 }
 
 main section{
-    background-color: rgb(245, 191, 13);
+    /* background: center/100% url("/assets/rickandmorty-space-2.png"); */
     min-height: 100vh;
-    padding: 5px 20px;
+    padding: 5px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%); */
+    background-color: navajowhite;
+    
 }
 
 main section .cards{
-    background-color: wheat;
+    /* background-color: navajowhite; */
     /* height: 500px; */
     width: 100%;
     display: flex;
@@ -124,15 +129,26 @@ main section .cards{
     justify-content: center;
     padding: 30px;
     flex-wrap: wrap;
+    opacity: 100%;
+}
+main section .cards .card img{
+    
+    width: 100px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
 }
 
 main section .cards .card{
-    height: 100px;
-    width: 100px;
-    background-color: black;
+    
+    background-color: rgb(219, 205, 205);
+    padding: 20px;
+    text-align: center;
+    border:1px solid black;
+    border-radius:30px;
 }
 
 footer{
-    background-color: cadetblue;
-    height: 140px;
-}
+    /* background-color: cadetblue; */
+/*     background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%);
+ */}
