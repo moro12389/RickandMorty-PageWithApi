@@ -1,0 +1,138 @@
+@font-face {
+font-family: "rickandmorty";
+src:url("/assets/get_schwifty.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  
+
+
+
+header{
+    
+    display: flex;
+    background:no-repeat center/100% url("/assets/rickandmorty-space-2.png");
+    align-items: stretch;
+    border-bottom: 5px solid royalblue;
+    flex-direction: column;
+    
+}
+
+header nav{
+    display: flex;
+    /* background-color: blueviolet; */
+    /* background-color: #24325fff; */
+    justify-content: flex-end;
+    padding: 20px;
+    /* border-bottom: 1px solid royalblue; */
+}
+
+header nav ul {
+    display: flex;
+    /* background-color: #5f9ea0; */
+    gap:20px;
+    list-style-type: none;
+    padding-right:20px ;
+}
+
+header nav ul li {
+    padding: 10px;
+    background-color: rgba(0, 153, 255, 0.219);
+    border-radius: 10px;
+    color:rgb(0, 255, 34) ;
+    
+}
+header nav ul li:hover {
+    padding: 15px;
+    background-color: rgba(0, 89, 255, 0.158);
+    
+}
+
+header nav ul a{
+    text-decoration: none;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: #162c7a; */
+    
+    min-height: 100vh;
+}
+.img-banner{
+    /* background-color: blanchedalmond; */
+    padding: 30px;
+}
+.img-banner img{
+    /* background-color: coral; */
+    width: 500px;
+    opacity: 80%;
+}
+.title-banner{
+    position:relative;
+    
+}
+.title-banner span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    border-left:1px solid #000;
+   /*  background-color: #004cff; */
+   background:gray;
+    animation:maquina 3s infinite alternate steps(16);
+}
+
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+.title-banner h1{
+    font-size: 90px;
+    font-family: "rickandmorty";
+    color:chartreuse
+
+}
+
+main section{
+    background-color: rgb(245, 191, 13);
+    min-height: 100vh;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .cards{
+    background-color: wheat;
+    /* height: 500px; */
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+main section .cards .card{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+
+footer{
+    background-color: cadetblue;
+    height: 140px;
+}
