@@ -10,14 +10,15 @@ src:url("/assets/get_schwifty.ttf");
     font-family: 'PT Sans Narrow', sans-serif;
 }
 body{
-/* ackground:no-repeat bottom/100% url("/assets/rickandmorty-space-2.png"); */
+    background:no-repeat url("/assets/rickandmorty-space-2.png") center center fixed;
+    background-size: cover;
     display: flex;
     align-items: stretch;
     flex-direction: column;
 /*     background-image: radial-gradient(circle at 31.7% 118.3%, #c5fcff 0, #5389f2 50%, #002550 100%);
  */
 
- background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%);
+ /* background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%); */
  
 }
 
@@ -83,8 +84,8 @@ header nav ul a{
 }
 .img-banner img{
     /* background-color: coral; */
-    width: 500px;
-    opacity: 80%;
+    width: 100%;
+    opacity: 90%;
 }
 .title-banner h1{
     animation: title 0.5s infinite alternate steps(3);
@@ -107,15 +108,24 @@ header nav ul a{
     color:chartreuse;
 }
 
+#characters{
+    background-color: #021821;
+    color: chartreuse;
+    text-align: center;
+    padding: 50px;
+    border-top: 2px solid chartreuse;
+    border-bottom: 2px solid chartreuse;
+}
 main section{
     /* background: center/100% url("/assets/rickandmorty-space-2.png"); */
     min-height: 100vh;
     padding: 5px 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    flex-direction: column;
     /* background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%); */
-    background-color: navajowhite;
+    /* background-color: navajowhite; */
     
 }
 
@@ -124,12 +134,12 @@ main section .cards{
     /* height: 500px; */
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 20px 50px;
     align-items: start;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 30px;
     flex-wrap: wrap;
-    opacity: 100%;
+
 }
 main section .cards .card img{
     
@@ -149,6 +159,34 @@ main section .cards .card{
 }
 
 footer{
-    /* background-color: cadetblue; */
-/*     background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%);
- */}
+    border-top:5px solid chartreuse;;
+    background-color: #021821;
+    color:#ffff;
+    padding: 50px;
+}
+.made{
+    border-bottom: 1px solid black;
+}
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+    padding: 10px 0px;
+  }
+
+.fa-github{
+    padding: 20px;
+}
+
+.fa-instagram{
+    padding: 20px;
+}
