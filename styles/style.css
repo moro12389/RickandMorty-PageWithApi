@@ -35,21 +35,13 @@ header{
 /*     background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%);
  */}
 
-header nav{
-    display: flex;
-    /* background-color: blueviolet; */
-    /* background-color: #24325fff; */
-    justify-content: flex-end;
-    padding: 20px;
-    /* border-bottom: 1px solid royalblue; */
-}
 
 header nav ul {
     display: flex;
-    /* background-color: #5f9ea0; */
     gap:20px;
     list-style-type: none;
-    padding-right:20px ;
+    padding: 20px;
+    justify-content: end;
 }
 
 header nav ul li {
@@ -74,21 +66,17 @@ header nav ul a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background: #162c7a; */
-    
     min-height: 100vh;
+    
 }
-.img-banner{
-    /* background-color: blanchedalmond; */
-    padding: 30px;
+
+header .banner .title-banner{
+    flex-grow: 2;
 }
-.img-banner img{
-    /* background-color: coral; */
-    width: 100%;
-    opacity: 90%;
-}
-.title-banner h1{
+
+header .banner .title-banner h1{
     animation: title 0.5s infinite alternate steps(3);
+    
     
 }
 
@@ -108,6 +96,9 @@ header nav ul a{
     color:chartreuse;
 }
 
+header .banner .img-banner{
+   flex-grow: 1;
+}
 #characters{
     background-color: #021821;
     color: chartreuse;
@@ -117,21 +108,17 @@ header nav ul a{
     border-bottom: 2px solid chartreuse;
 }
 main section{
-    /* background: center/100% url("/assets/rickandmorty-space-2.png"); */
+
     min-height: 100vh;
     padding: 5px 0px;
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-direction: column;
-    /* background-image: radial-gradient(circle at 45.78% 98.28%, #00b6ed 0, #127da4 25%, #1f4459 50%, #0e1317 75%, #000000 100%); */
-    /* background-color: navajowhite; */
     
 }
 
 main section .cards{
-    /* background-color: navajowhite; */
-    /* height: 500px; */
     width: 100%;
     display: flex;
     gap: 20px 50px;
@@ -205,8 +192,30 @@ footer{
     padding: 5px;
 }
 
-@media (max-width:780px) {
-    .description-card{
-        background-color: red;
+@media (max-width: 1086px) {
+    header .banner .title-banner h1{
+        font-size: 50px;
     }
+
+}
+
+/* MQ para tablet */
+@media (max-width: 880px) {
+    .img-banner img{     
+    }
+    header .banner .title-banner h1{
+        font-size: 40px;
+    }
+}
+/* MQ para celulares */
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+
+    }
+    header nav ul li{
+        text-align: center;
+
+    }
+
 }
