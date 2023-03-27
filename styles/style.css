@@ -10,7 +10,7 @@ src:url("/assets/get_schwifty.ttf");
     font-family: 'PT Sans Narrow', sans-serif;
 }
 body{
-    background:no-repeat url("/assets/rickandmorty-space-2.png") center center fixed;
+    background:no-repeat url("/assets/rickandmorty-space-2.png") center center/100% fixed;
     background-size: cover;
     display: flex;
     align-items: stretch;
