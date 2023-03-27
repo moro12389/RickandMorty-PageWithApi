@@ -64,20 +64,18 @@ header nav ul a{
 
 .banner{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     min-height: 100vh;
     
 }
-
-header .banner .title-banner{
-    flex-grow: 2;
+header .banner img{
+    width: 30%;
 }
 
-header .banner .title-banner h1{
-    animation: title 0.5s infinite alternate steps(3);
-    
-    
+header .banner .title{
+    text-align: center;
+    flex-grow: 1;
 }
 
 
@@ -89,16 +87,13 @@ header .banner .title-banner h1{
         width: 100%;
     }
 }
-
-.title-banner h1{
+h1{
     font-size: 90px;
     font-family: "rickandmorty";
     color:chartreuse;
+    animation: title 0.5s infinite alternate steps(3);
 }
 
-header .banner .img-banner{
-   flex-grow: 1;
-}
 #characters{
     background-color: #021821;
     color: chartreuse;
@@ -192,19 +187,13 @@ footer{
     padding: 5px;
 }
 
-@media (max-width: 1086px) {
-    header .banner .title-banner h1{
-        font-size: 50px;
-    }
 
-}
 
 /* MQ para tablet */
 @media (max-width: 880px) {
-    .img-banner img{     
-    }
-    header .banner .title-banner h1{
-        font-size: 40px;
+
+    header .banner .title h1{
+        font-size: 50px;
     }
 }
 /* MQ para celulares */
